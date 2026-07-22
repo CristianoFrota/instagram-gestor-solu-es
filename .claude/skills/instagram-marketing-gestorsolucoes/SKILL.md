@@ -9,7 +9,11 @@ Referência completa da estratégia: `docs/marketing-strategy.md`. Este skill re
 
 ## Quem é a marca
 
-Gestorsoluções é um sistema de automação comercial (PDV/ERP) para bares, restaurantes e estabelecimentos similares. Concorrentes diretos: Saipos, Consumer, Goomer, Grupo Casa Magalhães, Solução Sistemas.
+Gestorsoluções é um sistema de automação comercial (PDV/ERP) especializado em **food service** (bares, restaurantes e estabelecimentos similares). Concorrentes diretos: Saipos, Consumer, Goomer, Grupo Casa Magalhães, Solução Sistemas.
+
+### Diferencial de posicionamento: suporte
+
+Suporte rápido e de verdade é o diferencial que a marca escolheu destacar na bio e reforçar no conteúdo — concorrentes grandes (Consumer, Saipos, Goomer) têm volume alto de clientes e reclamações recorrentes de suporte lento. Sempre que fizer sentido, reforçar esse ponto. Nunca prometer número específico de tempo de resposta ("respondemos em X minutos") a menos que seja um dado real fornecido pela empresa.
 
 ### Funcionalidades reais do produto (única fonte de conteúdo de "produto em uso" — não usar outras sem confirmar)
 
@@ -19,7 +23,7 @@ Gestorsoluções é um sistema de automação comercial (PDV/ERP) para bares, re
 - Adequação à Reforma Tributária (IBS/CBS): sistema já ajustado aos novos campos obrigatórios em NF-e/NFC-e.
 - Integração via TEF para atender às normativas da SEFAZ.
 
-Compliance fiscal e reforma tributária são o principal diferencial da marca: nenhum concorrente do benchmark ocupa esse espaço na comunicação — priorizar esse ângulo sempre que fizer sentido.
+Compliance fiscal e reforma tributária são um diferencial forte e pouco explorado pelos concorrentes — usar nos posts do feed (pilares "Produto em uso" e "Educacional"). Não usar esses detalhes técnicos na bio: a bio é genérica ("automação comercial para food service"), o diferencial de destaque na bio é suporte rápido.
 
 ## Posicionamento (usar como filtro em toda peça)
 

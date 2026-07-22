@@ -70,27 +70,18 @@ Nenhum concorrente comunica compliance fiscal (reforma tributária, NF-e/NFC-e, 
 
 ### 5.3 Bio recomendada
 
-A bio do Instagram deve funcionar como uma mini-landing page, com categoria + benefícios objetivos + CTA único:
+Decisão: manter a bio **genérica** (posicionamento amplo em food service, sem listar funcionalidade técnica específica) e usar **suporte rápido** como diferencial de destaque — é uma dor recorrente do setor: a maioria dos concorrentes grandes (Consumer, Saipos, Goomer) tem volume alto de clientes e reclamações de suporte lento/travado em triagem. Compliance fiscal, Stone/Cielo, KDS etc. ficam para o conteúdo do feed (pilar "Produto em uso" e "Educacional"), não para a bio.
 
 ```
 Gestorsoluções
-Sistema de gestão para bares e restaurantes
-✅ Caixa, comanda e estoque em um só lugar
-✅ Emissão fiscal e adequado à Reforma Tributária
-👇 Fale com a gente / agende uma demonstração
+Automação comercial para food service 🍽️
+✅ Suporte rápido e de verdade, sem enrolação
+✅ Caixa, comanda, estoque e emissão fiscal em um só lugar
+👇 Fale com a gente
 [link para WhatsApp ou landing page]
 ```
 
-Alternativa com foco em compliance (diferenciação forte e pouco explorada pelos concorrentes):
-
-```
-Gestorsoluções
-Automação comercial para bares e restaurantes
-✅ Já adaptado à Reforma Tributária (IBS/CBS)
-✅ Integrado com Stone, Cielo e TEF/SEFAZ
-👇 Agende uma demonstração grátis
-[link para WhatsApp ou landing page]
-```
+Cuidado: "suporte rápido" é uma promessa forte — só manter na bio enquanto for verdade na prática (é a primeira coisa que um cliente frustrado com a concorrência vai testar). Não anunciar número específico ("respondemos em X minutos") a menos que seja um dado real e sustentável.
 
 Recomendações gerais:
 - **Link na bio** deve apontar para uma página (ou WhatsApp Business com mensagem pré-definida) com um único objetivo: capturar o lead (nome, estabelecimento, WhatsApp) e não uma página institucional genérica.
