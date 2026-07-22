@@ -9,6 +9,16 @@
 - **Mercado**: Software de gestão para food service no Brasil. Concorrência forte e com contas grandes e maduras no Instagram.
 - **Objetivo do Instagram**: não é só "postar" — é ser uma **vitrine do produto** (mostrar o sistema funcionando) e uma **landing page geradora de leads** (visitante vira demo agendada / contato comercial).
 
+### Funcionalidades confirmadas do produto (usar como base de conteúdo real)
+
+- Emissão de documentos fiscais (NFe/NFC-e) direto do sistema.
+- Adaptação/integração com maquininhas **Stone** e **Cielo**.
+- **KDS** (Kitchen Display System — painel de pedidos na cozinha) em uso.
+- Adequação à **Reforma Tributária** (IBS/CBS): sistema já ajustado para os novos campos obrigatórios em NF-e/NFC-e.
+- Integração via **TEF** para atender às normativas da **SEFAZ**.
+
+Essas funcionalidades são a diferenciação mais forte da Gestorsoluções frente aos concorrentes: nenhum dos benchmarks abaixo comunica compliance fiscal/reforma tributária como destaque na bio ou no conteúdo — é um espaço em aberto para a marca ocupar com autoridade.
+
 ## 2. Benchmark de concorrentes
 
 | Empresa | Instagram | Porte | Segmento | O que fazem bem | O que aplicar na Gestorsoluções |
@@ -44,20 +54,49 @@ Regra prática: todo post do pilar "Produto" ou "Prova social" termina com uma c
 
 ## 5. Bio como landing page
 
-A bio do Instagram deve funcionar como uma mini-landing page:
+### 5.1 Diagnóstico da bio atual
+
+A bio de [@gestorsolucoes](https://www.instagram.com/gestorsolucoes/) hoje é puramente descritiva/institucional ("empresa especializada em automação comercial para bares, restaurantes e estabelecimentos similares"), sem bullets de benefício, sem prova social, sem CTA único e sem link de captura de lead — 9 posts e 63 seguidores. Não está errada, mas não converte: é texto de "sobre nós", não de landing page.
+
+### 5.2 Benchmark de bios de concorrentes
+
+| Empresa | Bio (texto real ou padrão observado) | O que funciona |
+|---|---|---|
+| **Consumer** (`@consumer.br`, ~57 mil seguidores) | "❤️Simplificamos a Gestão do seu Negócio 🥇A maior solução do Brasil integrada ao iFood 😃 Versão Grátis e Suporte Total 🤝🏻Parceiro Google e Sebrae" | Benefício em cada linha (1 emoji + 1 frase curta), prova social objetiva (parceiro Google/Sebrae), proposta de valor mensurável |
+| **Goomer** (`@goomer_br`, ~44 mil seguidores) | Posiciona-se pela categoria ("Cardápio Digital") + funcionalidades (tablet, totem, delivery, QR code) | Categoria clara logo de cara — quem vê a bio já entende o produto em 1 palavra |
+| **Saipos** | Conteúdo institucional forte fora da bio (blog), reforça pertencer ao grupo iFood | Prova social por associação de marca |
+
+Nenhum concorrente comunica compliance fiscal (reforma tributária, NF-e/NFC-e, SEFAZ) na bio — é o espaço que a Gestorsoluções pode ocupar sozinha.
+
+### 5.3 Bio recomendada
+
+A bio do Instagram deve funcionar como uma mini-landing page, com categoria + benefícios objetivos + CTA único:
 
 ```
-Gestorsoluções 🍽️
+Gestorsoluções
 Sistema de gestão para bares e restaurantes
-✅ Comanda, caixa e estoque em um só lugar
-👇 Agende uma demonstração grátis
-[link para landing page / WhatsApp]
+✅ Caixa, comanda e estoque em um só lugar
+✅ Emissão fiscal e adequado à Reforma Tributária
+👇 Fale com a gente / agende uma demonstração
+[link para WhatsApp ou landing page]
 ```
 
-Recomendações:
+Alternativa com foco em compliance (diferenciação forte e pouco explorada pelos concorrentes):
+
+```
+Gestorsoluções
+Automação comercial para bares e restaurantes
+✅ Já adaptado à Reforma Tributária (IBS/CBS)
+✅ Integrado com Stone, Cielo e TEF/SEFAZ
+👇 Agende uma demonstração grátis
+[link para WhatsApp ou landing page]
+```
+
+Recomendações gerais:
 - **Link na bio** deve apontar para uma página (ou WhatsApp Business com mensagem pré-definida) com um único objetivo: capturar o lead (nome, estabelecimento, WhatsApp) e não uma página institucional genérica.
 - Usar o recurso de **link de agendamento** (Calendly ou similar) se houver capacidade comercial para atender demos.
 - Ativar o botão de **contato/WhatsApp** do perfil comercial do Instagram.
+- Definir a **categoria do perfil comercial** no Instagram como algo específico (ex.: "Empresa de software" ou "Serviço de consultoria de negócios"), não genérico.
 
 ## 6. Funil de leads
 

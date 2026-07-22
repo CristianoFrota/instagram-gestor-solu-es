@@ -11,6 +11,16 @@ Referência completa da estratégia: `docs/marketing-strategy.md`. Este skill re
 
 Gestorsoluções é um sistema de automação comercial (PDV/ERP) para bares, restaurantes e estabelecimentos similares. Concorrentes diretos: Saipos, Consumer, Goomer, Grupo Casa Magalhães, Solução Sistemas.
 
+### Funcionalidades reais do produto (única fonte de conteúdo de "produto em uso" — não usar outras sem confirmar)
+
+- Emissão de documentos fiscais (NFe/NFC-e) direto do sistema.
+- Adaptação/integração com maquininhas Stone e Cielo.
+- KDS (Kitchen Display System — painel de pedidos na cozinha).
+- Adequação à Reforma Tributária (IBS/CBS): sistema já ajustado aos novos campos obrigatórios em NF-e/NFC-e.
+- Integração via TEF para atender às normativas da SEFAZ.
+
+Compliance fiscal e reforma tributária são o principal diferencial da marca: nenhum concorrente do benchmark ocupa esse espaço na comunicação — priorizar esse ângulo sempre que fizer sentido.
+
 ## Posicionamento (usar como filtro em toda peça)
 
 "O sistema que tira o dono do bar/restaurante do operacional e coloca ele no controle do negócio."
