@@ -30,20 +30,29 @@ function publicUrlFor(relativePath) {
 }
 
 async function publishImagePost({ imageUrl, caption }) {
+  const createParams = new URLSearchParams({
+    image_url: imageUrl,
+    caption,
+    access_token: accessToken,
+  });
   const createRes = await fetch(`${GRAPH_API_BASE}/${igUserId}/media`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ image_url: imageUrl, caption, access_token: accessToken }),
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: createParams,
   });
   const createData = await createRes.json();
   if (!createRes.ok || !createData.id) {
     throw new Error(`Falha ao criar container de mídia: ${JSON.stringify(createData)}`);
   }
 
+  const publishParams = new URLSearchParams({
+    creation_id: createData.id,
+    access_token: accessToken,
+  });
   const publishRes = await fetch(`${GRAPH_API_BASE}/${igUserId}/media_publish`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ creation_id: createData.id, access_token: accessToken }),
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: publishParams,
   });
   const publishData = await publishRes.json();
   if (!publishRes.ok || !publishData.id) {
