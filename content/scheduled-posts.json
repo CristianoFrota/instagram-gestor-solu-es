@@ -7,5 +7,14 @@
     "status": "PUBLISHED",
     "igMediaId": "18208723570354576",
     "errorMessage": null
+  },
+  {
+    "id": "post-02-funciona-offline",
+    "imagePath": "content/posts/post-02-funciona-offline/post-02-funciona-offline.png",
+    "captionPath": "content/posts/post-02-funciona-offline/caption.txt",
+    "scheduledFor": "2026-07-24T13:00:00.000Z",
+    "status": "SCHEDULED",
+    "igMediaId": null,
+    "errorMessage": null
   }
 ]
