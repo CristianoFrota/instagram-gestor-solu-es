@@ -22,15 +22,15 @@ Ferramentas para melhorar o Instagram (@gestorsolucoes) da Gestorsoluções: est
    cp .env.example .env
    ```
 
-   - `DATABASE_URL` — já vem configurado para SQLite local (`file:./dev.db`).
+   - `DATABASE_URL` — string de conexão de um banco Postgres (veja "Deploy na Vercel" abaixo para provisionar um gratuito).
    - `META_ACCESS_TOKEN` — token de acesso de longa duração de uma conta comercial do Instagram, gerado no [Meta for Developers](https://developers.facebook.com/).
    - `IG_USER_ID` — ID da conta comercial do Instagram (Instagram Business Account ID).
    - `CRON_SECRET` — valor aleatório forte, usado para autenticar chamadas ao endpoint `/api/cron/publish`.
 
-3. Crie o banco de dados local:
+3. Crie e aplique a migration inicial (primeira vez que conectar a um banco novo):
 
    ```bash
-   npx prisma migrate dev
+   npx prisma migrate dev --name init
    ```
 
 4. Rode o servidor de desenvolvimento:
@@ -40,6 +40,39 @@ Ferramentas para melhorar o Instagram (@gestorsolucoes) da Gestorsoluções: est
    ```
 
    Abra [http://localhost:3000](http://localhost:3000) para agendar posts.
+
+## Deploy na Vercel (pra rodar sem depender do seu computador)
+
+O objetivo é ter a publicação automática rodando 24h sem precisar deixar nenhuma máquina ligada. Passo a passo:
+
+1. **Criar conta na [Vercel](https://vercel.com)** (dá pra entrar direto com a conta do GitHub).
+
+2. **Importar o repositório**: no dashboard da Vercel, "Add New" → "Project" → selecione `CristianoFrota/instagram-gestor-solu-es` → escolha a branch (`claude/gestorsolucoes-instagram-improvements-ofn2pc` ou a branch principal depois de mesclado).
+
+3. **Provisionar o banco Postgres**: dentro do projeto na Vercel, aba "Storage" → "Create Database" → Postgres (Neon). A Vercel já injeta a variável `DATABASE_URL` automaticamente no projeto — não precisa copiar/colar.
+
+4. **Configurar as demais variáveis de ambiente** (aba "Settings" → "Environment Variables" do projeto na Vercel):
+   - `META_ACCESS_TOKEN`
+   - `IG_USER_ID`
+   - `CRON_SECRET`
+
+5. **Gerar a migration inicial contra o banco real** (só na primeira vez, a partir do seu computador):
+
+   ```bash
+   vercel env pull .env   # baixa as variáveis reais do projeto na Vercel, incluindo DATABASE_URL
+   npx prisma migrate dev --name init
+   git add prisma/migrations
+   git commit -m "Adiciona migration inicial do banco de producao"
+   git push
+   ```
+
+   Isso cria os arquivos de migration e já aplica no banco real. Deploys seguintes na Vercel rodam `prisma migrate deploy` automaticamente (já configurado no `package.json`), então novas mudanças de schema só precisam desse mesmo processo.
+
+6. **Deploy**: a Vercel builda e publica automaticamente a cada push na branch conectada.
+
+7. **Cron automático**: o `vercel.json` já configura um Cron Job chamando `/api/cron/publish` a cada 15 minutos. A Vercel autentica essa chamada automaticamente com o valor de `CRON_SECRET` — não precisa configurar nada além do passo 4.
+
+A partir daqui, agendar um post pela tela (`/`) é suficiente — a publicação acontece sozinha no horário certo, mesmo com o computador desligado.
 
 ## Publicação automática
 

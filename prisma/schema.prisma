@@ -8,12 +8,12 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
-// SQLite has no native enum support; status is constrained in application
-// code to "SCHEDULED" | "PUBLISHED" | "FAILED" (see src/lib/postStatus.ts).
+// Status is constrained in application code to
+// "SCHEDULED" | "PUBLISHED" | "FAILED" (see src/lib/postStatus.ts).
 model ScheduledPost {
   id           String   @id @default(cuid())
   caption      String
