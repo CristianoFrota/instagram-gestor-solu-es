@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../../brand/fonts/inter-latin-ext-400-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Inter"; font-weight: 500; src: url("../../../brand/fonts/inter-latin-ext-500-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Inter"; font-weight: 600; src: url("../../../brand/fonts/inter-latin-ext-600-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Inter"; font-weight: 800; src: url("../../../brand/fonts/inter-latin-ext-800-normal.woff2") format("woff2"); }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px;
+    height: 1080px;
+    background: #122238;
+    font-family: "Inter", "Liberation Sans", Arial, sans-serif;
+    overflow: hidden;
+  }
+  .frame {
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 100px;
+  }
+  .mark {
+    padding: 16px 22px;
+    border-radius: 16px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 76px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  }
+  .mark img { display: block; width: 260px; height: auto; }
+  .headline {
+    color: #FFFFFF;
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: -1.5px;
+  }
+  .headline .accent { color: #6FA6EC; }
+  .divider { width: 72px; height: 3px; background: #4E8FE0; border-radius: 2px; margin: 44px 0; }
+  .subline { color: #6FA6EC; font-size: 32px; font-weight: 700; letter-spacing: 0.3px; }
+  .footer {
+    margin-top: 120px;
+    height: 26px;
+    color: #5C6C82;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="mark">
+      <img src="../../../brand/logo/logo-trimmed.png" alt="Gestor Soluções" />
+    </div>
+    <div class="headline">Conheça o<br /><span class="accent">portal Gestorsoluções.</span></div>
+    <div class="divider"></div>
+    <div class="subline">Vendas, ticket médio e top produtos — ao vivo, no celular.</div>
+    <div class="footer">@GESTORSOLUCOES · 2/4</div>
+  </div>
+</body>
+</html>
