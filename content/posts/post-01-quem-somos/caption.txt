@@ -1,4 +1,3 @@
 Gestorsoluções 👋
-Automação comercial (PDV) pra bares, restaurantes e food service em geral: caixa, comanda, estoque e emissão fiscal em um sistema só.
-Dois detalhes que fazem diferença no dia a dia: suporte ágil, sem enrolação, e o sistema continua funcionando mesmo se a internet cair — sem trava, sem fila parada no caixa.
-Vamos usar esse espaço pra trocar ideia sobre gestão. Segue aí 🔖
+PDV completo pra bares, restaurantes e food service em geral: caixa, comanda, estoque e emissão fiscal em um sistema só.
+Suporte ágil, sem enrolação — e o sistema continua funcionando mesmo se a internet cair, sem trava, sem fila parada no caixa.
