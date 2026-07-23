@@ -18,6 +18,14 @@ if (!accessToken || !igUserId) {
   process.exit(1);
 }
 
+console.log(
+  `Diagnóstico do token: comprimento=${accessToken.length}, ` +
+    `começa_com=${JSON.stringify(accessToken.slice(0, 6))}, ` +
+    `termina_com=${JSON.stringify(accessToken.slice(-6))}, ` +
+    `tem_espaço_ou_quebra_de_linha=${/\s/.test(accessToken)}`
+);
+console.log(`Diagnóstico do IG_USER_ID: ${JSON.stringify(igUserId)}`);
+
 const repo = process.env.GITHUB_REPOSITORY;
 const ref = process.env.GITHUB_REF_NAME || "main";
 if (!repo) {
