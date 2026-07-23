@@ -3,12 +3,38 @@
 <head>
 <meta charset="utf-8" />
 <style>
+  @font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    src: url("../../../brand/fonts/inter-latin-ext-400-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 500;
+    src: url("../../../brand/fonts/inter-latin-ext-500-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 600;
+    src: url("../../../brand/fonts/inter-latin-ext-600-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    src: url("../../../brand/fonts/inter-latin-ext-700-normal.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 800;
+    src: url("../../../brand/fonts/inter-latin-ext-800-normal.woff2") format("woff2");
+  }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body {
     width: 1080px;
     height: 1080px;
     background: linear-gradient(160deg, #0E1B2B 0%, #14243A 55%, #0E1B2B 100%);
-    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Inter", "Liberation Sans", Arial, sans-serif;
     overflow: hidden;
   }
   .frame {
@@ -22,73 +48,94 @@
     text-align: center;
   }
   .mark {
-    width: 108px;
-    height: 108px;
+    width: 118px;
+    height: 118px;
     border-radius: 50%;
     background: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   }
   .mark .bars {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 58px;
+    height: 64px;
   }
-  .mark .bar { height: 10px; border-radius: 2px; }
-  .mark .bar.blue   { width: 58px; background: #1B4F9C; }
-  .mark .bar.red    { width: 48px; background: #E53E30; }
-  .mark .bar.green  { width: 38px; background: #5CB85C; }
-  .mark .bar.yellow { width: 29px; background: #F2C230; }
+  .mark .bar { height: 11px; border-radius: 2px; }
+  .mark .bar.blue   { width: 64px; background: #1B4F9C; }
+  .mark .bar.red    { width: 53px; background: #E53E30; }
+  .mark .bar.green  { width: 42px; background: #5CB85C; }
+  .mark .bar.yellow { width: 32px; background: #F2C230; }
   .brand {
     color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    font-size: 84px;
+    font-weight: 800;
+    letter-spacing: -1px;
   }
   .tagline {
-    margin-top: 18px;
-    color: #B9C4D3;
-    font-size: 28px;
-    font-weight: 400;
-    letter-spacing: 0.2px;
+    margin-top: 20px;
+    color: #C7D1DE;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
   }
   .divider {
-    width: 64px;
+    width: 72px;
     height: 3px;
     background: #4E8FE0;
     border-radius: 2px;
-    margin: 40px 0;
+    margin: 44px 0;
   }
   .support {
-    color: #4E8FE0;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
+    color: #6FA6EC;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
   }
-  .chips {
+  .flow {
     position: absolute;
-    bottom: 84px;
+    bottom: 96px;
     display: flex;
-    gap: 14px;
+    align-items: center;
   }
-  .chip {
-    padding: 12px 22px;
-    border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 999px;
-    color: #D7DEE8;
-    font-size: 19px;
-    font-weight: 500;
-    letter-spacing: 0.3px;
+  .flow-step {
+    padding: 16px 26px;
+    border: 1.5px solid rgba(255,255,255,0.28);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.04);
+    color: #E7ECF3;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+  }
+  .flow-arrow {
+    width: 30px;
+    height: 2px;
+    background: rgba(255,255,255,0.28);
+    margin: 0 6px;
+    position: relative;
+  }
+  .flow-arrow::after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid rgba(255,255,255,0.28);
+    border-right: 2px solid rgba(255,255,255,0.28);
+    transform: translateY(-50%) rotate(45deg);
   }
   .footer {
     position: absolute;
     bottom: 40px;
     color: #5C6C82;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
     letter-spacing: 1.5px;
     text-transform: uppercase;
   }
@@ -108,11 +155,14 @@
     <div class="tagline">Automação comercial para food service</div>
     <div class="divider"></div>
     <div class="support">Suporte rápido, de verdade.</div>
-    <div class="chips">
-      <div class="chip">Caixa</div>
-      <div class="chip">Comanda</div>
-      <div class="chip">Estoque</div>
-      <div class="chip">Emissão fiscal</div>
+    <div class="flow">
+      <div class="flow-step">Caixa</div>
+      <div class="flow-arrow"></div>
+      <div class="flow-step">Comanda</div>
+      <div class="flow-arrow"></div>
+      <div class="flow-step">Estoque</div>
+      <div class="flow-arrow"></div>
+      <div class="flow-step">Emissão fiscal</div>
     </div>
     <div class="footer">@gestorsolucoes</div>
   </div>
