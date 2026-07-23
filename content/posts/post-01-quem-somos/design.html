@@ -20,11 +20,6 @@
   }
   @font-face {
     font-family: "Inter";
-    font-weight: 700;
-    src: url("../../../brand/fonts/inter-latin-ext-700-normal.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Inter";
     font-weight: 800;
     src: url("../../../brand/fonts/inter-latin-ext-800-normal.woff2") format("woff2");
   }
@@ -33,7 +28,7 @@
   html, body {
     width: 1080px;
     height: 1080px;
-    background: linear-gradient(160deg, #0E1B2B 0%, #14243A 55%, #0E1B2B 100%);
+    background: #122238;
     font-family: "Inter", "Liberation Sans", Arial, sans-serif;
     overflow: hidden;
   }
@@ -46,83 +41,43 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0 100px;
   }
   .mark {
-    padding: 30px 40px;
-    border-radius: 28px;
+    padding: 16px 22px;
+    border-radius: 16px;
     background: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 48px;
-    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+    margin-bottom: 76px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
   }
   .mark img {
     display: block;
-    width: 480px;
+    width: 260px;
     height: auto;
   }
-  .tagline {
-    margin-top: 0;
-    color: #C7D1DE;
-    font-size: 36px;
+  .headline {
+    color: #FFFFFF;
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: -1.5px;
+  }
+  .headline .accent { color: #6FA6EC; }
+  .subline {
+    margin-top: 40px;
+    color: #A9B6C6;
+    font-size: 30px;
     font-weight: 500;
     letter-spacing: 0.1px;
   }
-  .divider {
-    width: 72px;
-    height: 3px;
-    background: #4E8FE0;
-    border-radius: 2px;
-    margin: 44px 0;
-  }
-  .support {
-    color: #6FA6EC;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 0.2px;
-  }
-  .flow {
-    position: absolute;
-    bottom: 96px;
-    display: flex;
-    align-items: center;
-  }
-  .flow-step {
-    padding: 20px 30px;
-    border: 1.5px solid rgba(255,255,255,0.32);
-    border-radius: 999px;
-    background: rgba(255,255,255,0.07);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.22);
-    color: #F2F5F9;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 0.1px;
-    white-space: nowrap;
-  }
-  .flow-arrow {
-    width: 34px;
-    height: 2px;
-    background: rgba(255,255,255,0.32);
-    margin: 0 8px;
-    position: relative;
-  }
-  .flow-arrow::after {
-    content: "";
-    position: absolute;
-    right: -1px;
-    top: 50%;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid rgba(255,255,255,0.32);
-    border-right: 2px solid rgba(255,255,255,0.32);
-    transform: translateY(-50%) rotate(45deg);
-  }
   .footer {
-    position: absolute;
-    bottom: 40px;
+    margin-top: 160px;
+    height: 26px;
     color: #5C6C82;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -134,18 +89,8 @@
     <div class="mark">
       <img src="../../../brand/logo/logo-trimmed.png" alt="Gestor Soluções" />
     </div>
-    <div class="tagline">Automação comercial para food service</div>
-    <div class="divider"></div>
-    <div class="support">Suporte rápido, de verdade.</div>
-    <div class="flow">
-      <div class="flow-step">Caixa</div>
-      <div class="flow-arrow"></div>
-      <div class="flow-step">Comanda</div>
-      <div class="flow-arrow"></div>
-      <div class="flow-step">Estoque</div>
-      <div class="flow-arrow"></div>
-      <div class="flow-step">Emissão fiscal</div>
-    </div>
+    <div class="headline">Sua venda não para.<br />Nem quando a <span class="accent">internet cai</span>.</div>
+    <div class="subline">Sistema de automação comercial que funciona offline.</div>
     <div class="footer">@gestorsolucoes</div>
   </div>
 </body>

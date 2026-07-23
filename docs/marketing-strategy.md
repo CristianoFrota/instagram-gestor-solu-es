@@ -11,13 +11,14 @@
 
 ### Funcionalidades confirmadas do produto (usar como base de conteúdo real)
 
+- **Funciona offline**: o sistema continua vendendo mesmo sem internet — não trava o caixa quando a conexão cai. A maioria dos concorrentes de nuvem (Consumer, Saipos, Goomer) depende 100% de internet estável; esse é um diferencial concreto e raro no mercado.
 - Emissão de documentos fiscais (NFe/NFC-e) direto do sistema.
 - Adaptação/integração com maquininhas **Stone** e **Cielo**.
 - **KDS** (Kitchen Display System — painel de pedidos na cozinha) em uso.
 - Adequação à **Reforma Tributária** (IBS/CBS): sistema já ajustado para os novos campos obrigatórios em NF-e/NFC-e.
 - Integração via **TEF** para atender às normativas da **SEFAZ**.
 
-Essas funcionalidades são a diferenciação mais forte da Gestorsoluções frente aos concorrentes: nenhum dos benchmarks abaixo comunica compliance fiscal/reforma tributária como destaque na bio ou no conteúdo — é um espaço em aberto para a marca ocupar com autoridade.
+Essas funcionalidades são a diferenciação mais forte da Gestorsoluções frente aos concorrentes: nenhum dos benchmarks abaixo comunica compliance fiscal/reforma tributária ou funcionamento offline como destaque na bio ou no conteúdo — é um espaço em aberto para a marca ocupar com autoridade.
 
 ## 2. Benchmark de concorrentes
 

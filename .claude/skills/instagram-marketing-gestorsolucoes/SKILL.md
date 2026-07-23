@@ -17,6 +17,7 @@ Suporte rápido e de verdade é o diferencial que a marca escolheu destacar na b
 
 ### Funcionalidades reais do produto (única fonte de conteúdo de "produto em uso" — não usar outras sem confirmar)
 
+- **Funciona offline**: o sistema continua operando mesmo sem internet — não trava a venda quando a conexão cai. Diferencial forte e concreto (a maioria dos concorrentes é 100% dependente de nuvem/internet).
 - Emissão de documentos fiscais (NFe/NFC-e) direto do sistema.
 - Adaptação/integração com maquininhas Stone e Cielo.
 - KDS (Kitchen Display System — painel de pedidos na cozinha).
