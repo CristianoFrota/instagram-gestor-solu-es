@@ -1,5 +1,5 @@
 const GRAPH_API_VERSION = "v21.0";
-const GRAPH_API_BASE = `https://graph.facebook.com/${GRAPH_API_VERSION}`;
+const GRAPH_API_BASE = `https://graph.instagram.com/${GRAPH_API_VERSION}`;
 
 function getCredentials() {
   const accessToken = process.env.META_ACCESS_TOKEN;
