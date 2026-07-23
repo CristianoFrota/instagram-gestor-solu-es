@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1024px;
+    height: 1024px;
+    background: #FFFFFF;
+  }
+  .frame {
+    width: 1024px;
+    height: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lockup {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+  .bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+  }
+  .bar {
+    height: 56px;
+    border-radius: 3px;
+  }
+  .bar.blue   { width: 300px; background: #1B4F9C; }
+  .bar.red    { width: 248px; background: #E53E30; }
+  .bar.green  { width: 196px; background: #5CB85C; }
+  .bar.yellow { width: 150px; background: #F2C230; }
+  .wordmark {
+    font-family: "Arial Black", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 900;
+    color: #131313;
+    line-height: 1.06;
+    letter-spacing: 0.5px;
+  }
+  .wordmark div { font-size: 92px; white-space: nowrap; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="lockup">
+      <div class="bars">
+        <div class="bar blue"></div>
+        <div class="bar red"></div>
+        <div class="bar green"></div>
+        <div class="bar yellow"></div>
+      </div>
+      <div class="wordmark">
+        <div>GESTOR</div>
+        <div>SOLUÇÕES</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

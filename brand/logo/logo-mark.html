@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 512px; height: 512px; background: transparent; }
+  .frame {
+    width: 512px; height: 512px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .bars {
+    display: flex; flex-direction: column; justify-content: space-between;
+    height: 300px;
+  }
+  .bar { height: 56px; border-radius: 3px; }
+  .bar.blue   { width: 300px; background: #1B4F9C; }
+  .bar.red    { width: 248px; background: #E53E30; }
+  .bar.green  { width: 196px; background: #5CB85C; }
+  .bar.yellow { width: 150px; background: #F2C230; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="bars">
+      <div class="bar blue"></div>
+      <div class="bar red"></div>
+      <div class="bar green"></div>
+      <div class="bar yellow"></div>
+    </div>
+  </div>
+</body>
+</html>
