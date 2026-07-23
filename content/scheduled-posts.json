@@ -4,8 +4,8 @@
     "imagePath": "content/posts/post-01-quem-somos/post-01-quem-somos.png",
     "captionPath": "content/posts/post-01-quem-somos/caption.txt",
     "scheduledFor": "2026-07-23T00:00:00.000Z",
-    "status": "SCHEDULED",
-    "igMediaId": null,
+    "status": "PUBLISHED",
+    "igMediaId": "18208723570354576",
     "errorMessage": null
   }
 ]
