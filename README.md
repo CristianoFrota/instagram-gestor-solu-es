@@ -56,21 +56,11 @@ O objetivo é ter a publicação automática rodando 24h sem precisar deixar nen
    - `IG_USER_ID`
    - `CRON_SECRET`
 
-5. **Gerar a migration inicial contra o banco real** (só na primeira vez, a partir do seu computador):
+5. **Deploy**: a Vercel builda e publica automaticamente a cada push na branch conectada. O comando de build já roda `prisma migrate deploy` sozinho, aplicando as tabelas no banco (a migration inicial já está commitada no repositório em `prisma/migrations/`) — nenhum comando manual é necessário.
 
-   ```bash
-   vercel env pull .env   # baixa as variáveis reais do projeto na Vercel, incluindo DATABASE_URL
-   npx prisma migrate dev --name init
-   git add prisma/migrations
-   git commit -m "Adiciona migration inicial do banco de producao"
-   git push
-   ```
+6. **Cron automático**: o `vercel.json` já configura um Cron Job chamando `/api/cron/publish` a cada 15 minutos. A Vercel autentica essa chamada automaticamente com o valor de `CRON_SECRET` — não precisa configurar nada além do passo 4.
 
-   Isso cria os arquivos de migration e já aplica no banco real. Deploys seguintes na Vercel rodam `prisma migrate deploy` automaticamente (já configurado no `package.json`), então novas mudanças de schema só precisam desse mesmo processo.
-
-6. **Deploy**: a Vercel builda e publica automaticamente a cada push na branch conectada.
-
-7. **Cron automático**: o `vercel.json` já configura um Cron Job chamando `/api/cron/publish` a cada 15 minutos. A Vercel autentica essa chamada automaticamente com o valor de `CRON_SECRET` — não precisa configurar nada além do passo 4.
+Se no futuro o schema do banco mudar (novos campos, por exemplo), aí sim é preciso gerar uma nova migration a partir de um computador com o projeto clonado (`npx prisma migrate dev --name <nome>`) e commitar o resultado — mas isso não é necessário para o setup inicial.
 
 A partir daqui, agendar um post pela tela (`/`) é suficiente — a publicação acontece sozinha no horário certo, mesmo com o computador desligado.
 
