@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px;
+    height: 1080px;
+    background: linear-gradient(160deg, #0E1B2B 0%, #14243A 55%, #0E1B2B 100%);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+  }
+  .frame {
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .mark {
+    width: 92px;
+    height: 92px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #E8A33D, #D6862A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    box-shadow: 0 12px 30px rgba(232, 163, 61, 0.25);
+  }
+  .mark svg { width: 48px; height: 48px; }
+  .brand {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  .tagline {
+    margin-top: 18px;
+    color: #B9C4D3;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+  .divider {
+    width: 64px;
+    height: 3px;
+    background: #E8A33D;
+    border-radius: 2px;
+    margin: 40px 0;
+  }
+  .support {
+    color: #E8A33D;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .chips {
+    position: absolute;
+    bottom: 84px;
+    display: flex;
+    gap: 14px;
+  }
+  .chip {
+    padding: 12px 22px;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 999px;
+    color: #D7DEE8;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 40px;
+    color: #5C6C82;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="mark">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 19V13.5C4 10.5 6 8.5 9 8.5H10" stroke="#14243A" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20 5L13 12L9.5 8.5L4 14" stroke="#14243A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15 5H20V10" stroke="#14243A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="brand">Gestorsoluções</div>
+    <div class="tagline">Automação comercial para food service</div>
+    <div class="divider"></div>
+    <div class="support">Suporte rápido, de verdade.</div>
+    <div class="chips">
+      <div class="chip">Caixa</div>
+      <div class="chip">Comanda</div>
+      <div class="chip">Estoque</div>
+      <div class="chip">Emissão fiscal</div>
+    </div>
+    <div class="footer">@gestorsolucoes</div>
+  </div>
+</body>
+</html>
