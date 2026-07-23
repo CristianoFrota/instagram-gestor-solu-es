@@ -1,0 +1,40 @@
+name: Publicar posts agendados no Instagram
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-instagram
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Publicar posts vencidos
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: node scripts/publish-scheduled-posts.mjs
+
+      - name: Salvar status atualizado
+        if: always()
+        run: |
+          if ! git diff --quiet -- content/scheduled-posts.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add content/scheduled-posts.json
+            git commit -m "Atualiza status dos posts publicados via Instagram Graph API"
+            git push
+          fi

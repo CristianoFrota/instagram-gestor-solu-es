@@ -41,9 +41,33 @@ Ferramentas para melhorar o Instagram (@gestorsolucoes) da Gestorsoluções: est
 
    Abra [http://localhost:3000](http://localhost:3000) para agendar posts.
 
-## Deploy na Vercel (pra rodar sem depender do seu computador)
+## Automação de publicação via GitHub Actions (recomendado)
 
-O objetivo é ter a publicação automática rodando 24h sem precisar deixar nenhuma máquina ligada. Passo a passo:
+Essa é a forma mais simples e com menos peças de deixar a publicação automática rodando sem depender do seu computador nem de nenhum serviço de hospedagem — usa só o próprio GitHub, que já está configurado neste repositório.
+
+Como funciona:
+
+- Os posts agendados ficam no arquivo [`content/scheduled-posts.json`](./content/scheduled-posts.json) (um item por post: imagem, legenda, data/hora agendada, status).
+- Um workflow do GitHub Actions ([`.github/workflows/publish-instagram.yml`](./.github/workflows/publish-instagram.yml)) roda a cada 15 minutos, verifica quais posts já venceram e publica cada um via Instagram Graph API. O próprio workflow atualiza o status no JSON e commita de volta (`PUBLISHED` ou `FAILED`, com o motivo do erro).
+- Não precisa de banco de dados nem de servidor web rodando — só o GitHub.
+
+Passo a passo pra ativar:
+
+1. **Cadastrar os secrets**: no repositório no GitHub, vá em **Settings → Secrets and variables → Actions → New repository secret** e adicione:
+   - `META_ACCESS_TOKEN`
+   - `IG_USER_ID`
+
+   (mesmos valores usados na Vercel; ficam criptografados e nunca são exibidos de novo, e são automaticamente mascarados nos logs do workflow).
+
+2. **Tornar o repositório público**: a Instagram Graph API busca a imagem por URL pública, e o workflow usa `raw.githubusercontent.com` pra isso — que só funciona em repositórios públicos. Como o conteúdo aqui é material de marketing que vai para o Instagram público de qualquer forma (não há lógica de negócio proprietária no código), isso normalmente não é um problema — mas é uma decisão sua, então avise antes de eu seguir se preferir tornar público (Settings → General → Danger Zone → Change visibility) ou se prefere usar outro serviço de hospedagem de imagem (ex.: Cloudinary/imgbb) mantendo o repo privado — nesse segundo caso é só me avisar que ajusto o script.
+
+3. **Agendar um novo post**: edite `content/scheduled-posts.json` adicionando um novo item (ou peça pra mim), aponte `imagePath`/`captionPath` para os arquivos do post e defina `scheduledFor`. Ao commitar, o próximo ciclo do workflow (até 15 min) publica automaticamente.
+
+4. **Rodar manualmente**: na aba **Actions** do GitHub, escolha o workflow "Publicar posts agendados no Instagram" → **Run workflow**, pra testar sem esperar o cron.
+
+## Deploy na Vercel (opcional — só pra ter a telinha de agendamento)
+
+Esse caminho continua aqui pra quem quiser uma interface web pra agendar posts clicando (em vez de editar o JSON direto). Não é mais necessário pra automação em si — isso já é resolvido pelo GitHub Actions acima, que funciona independente da Vercel. Passo a passo:
 
 1. **Criar conta na [Vercel](https://vercel.com)** (dá pra entrar direto com a conta do GitHub).
 
